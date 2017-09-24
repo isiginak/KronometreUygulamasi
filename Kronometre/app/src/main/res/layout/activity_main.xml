@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.kronometre.MainActivity">
+
+    <Chronometer
+        android:id="@+id/sayac"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:gravity="center"
+        android:textAlignment="center"
+
+        android:textSize="50dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/butonrengi"/>
+    <Button
+        android:id="@+id/baslat"
+        android:layout_below="@id/sayac"
+        android:layout_centerHorizontal="true"
+        android:text="BAŞLAT"
+       android:onClick="start"
+        android:textSize="25sp"
+        android:background="@drawable/custombutton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/durdur"
+        android:layout_below="@id/baslat"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:text="DURDUR"
+        android:onClick="stop"
+        android:textSize="25sp"
+        android:background="@drawable/custombutton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/kaydet"
+        android:layout_below="@id/durdur"
+        android:layout_centerHorizontal="true"
+        android:text="KAYDET"
+        android:onClick="save"
+        android:textSize="25sp"
+        android:background="@drawable/custombutton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/goster"
+        android:layout_below="@id/kaydet"
+        android:layout_centerHorizontal="true"
+        android:text="GÖSTER"
+        android:onClick="show"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custombutton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+</RelativeLayout>
+</ScrollView>
